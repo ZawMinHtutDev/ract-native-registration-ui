@@ -12,7 +12,6 @@ const AuthStack = () => {
             headerShown: false,
             contentStyle: {
                 backgroundColor: GlobalStyles.bgColor,
-                paddingHorizontal: GlobalStyles.px,
             }
         }}>
             <StackNav.Screen name="Register" component={Register} />
@@ -26,7 +25,6 @@ const ProfileStack = () => {
             headerShown: false,
             contentStyle: {
                 backgroundColor: GlobalStyles.bgColor,
-                paddingHorizontal: GlobalStyles.px,
             }
         }}>
             <StackNav.Screen name="Profile" component={Profile} />
