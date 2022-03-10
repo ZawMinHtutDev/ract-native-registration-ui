@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
     form: {
         paddingVertical: 9,
         paddingHorizontal: 18,
-        backgroundColor: "#ffffff88",
+        backgroundColor: "#ffffffaa",
         borderRadius: 5,
     },
     label: {
