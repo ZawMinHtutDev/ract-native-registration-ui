@@ -37,7 +37,7 @@ export const AppNavigation = () => {
             <StackNav.Navigator
                 screenOptions={screenOptions}
                 initialRouteName={
-                    !User.userName.length ? "AuthStack" : "ProfileStack"
+                    !User.id? "AuthStack" : "ProfileStack"
                 }
             >
                 <StackNav.Screen name="AuthStack" component={AuthStack} />

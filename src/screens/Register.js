@@ -15,6 +15,8 @@ import { SECRET_KEY } from "../../config";
 import { useDispatch } from "react-redux";
 import { updateUser } from "../redux/actions";
 import { useNavigation } from "@react-navigation/native";
+import "react-native-get-random-values";
+import { v4 as uuidv4} from "uuid";
 
 export const Register = () => {
     const {
@@ -64,6 +66,7 @@ export const Register = () => {
         }
 
         const submitData = {
+            id: uuidv4(),
             userName: userName.trim(),
             email: email.trim(),
             password: cryptoJs.HmacMD5(password.trim(), SECRET_KEY).toString(),
